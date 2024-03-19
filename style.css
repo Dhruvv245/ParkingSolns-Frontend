@@ -537,7 +537,7 @@ button {
 }
 @media (min-width: 800px) {
   .page-content {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -556,12 +556,14 @@ button {
 @media (max-width: 600px) {
   .card {
     height: 350px;
+    width:237px;
     padding: 100px;
   }
 }
 @media (min-width: 600px) {
   .card {
     height: 350px;
+    width:237px;
     padding: 100px;
   }
 }
