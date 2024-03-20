@@ -600,6 +600,7 @@ button {
 }
 
 
+
 .content {
   position: relative;
   display: flex;
@@ -685,5 +686,12 @@ button {
   .card:focus-within .content,
   .card:focus-within .content > *:not(.title) {
     transition-duration: 0s;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .page-content {
+      width: 237px; 
+      height: auto; 
+      overflow: scroll; 
   }
 }
