@@ -567,14 +567,14 @@ button {
 @media (max-width: 600px) {
   .card {
     height: 350px;
-    width:237px;
+    width: 237px;
     padding: 100px;
   }
 }
 @media (min-width: 600px) {
   .card {
     height: 350px;
-    width:237px;
+    width: 237px;
     padding: 100px;
   }
 }
@@ -622,10 +622,10 @@ button {
   transition: transform calc(var(--d) * 2) var(--e);
 }
 .card:nth-child(1):before {
-  background-image: url(sexygirls.jpg);
+  background-image: url(Images/sexygirls.jpg);
 }
 .card:nth-child(2):before {
-  background-image: url(hdcars.jpg);
+  background-image: url(Images/hdcars.jpg);
 }
 
 .content {
