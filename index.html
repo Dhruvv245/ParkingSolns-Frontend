@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="Images/logoParker.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
@@ -30,9 +34,62 @@
           <h5>slot</h5>
         </div>
         <video autoplay loop muted src="Video\1.mp4"></video>
+        <div class="login-page">
+          <div class="container">
+            <h1>Login</h1>
+            <form action="">
+              <div class="credentials">
+                <input type="text" placeholder="Email address" required />
+                <i class="bx bxs-user"></i>
+              </div>
+              <div class="credentials">
+                <input type="password" placeholder="Password" required />
+                <i class="bx bxs-lock-alt"></i>
+              </div>
+              <div class="extra">
+                <label><input type="checkbox" />Remember me</label>
+                <a href="#">Forgot password?</a>
+              </div>
+              <button type="submit" class="btn">Login</button>
+              <div class="register-link">
+                <p>
+                  Don't have an account? <a href="#" id="register">Register</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="signup-page">
+          <div class="signup-container">
+            <h1>Sign Up</h1>
+            <form action="">
+              <div class="signup-credentials">
+                <input type="text" placeholder="Full Name" required />
+                <i class="bx bxs-user"></i>
+              </div>
+              <div class="signup-credentials">
+                <input type="text" placeholder="Email" required />
+                <i class="bx bx-envelope"></i>
+              </div>
+              <div class="signup-credentials">
+                <input type="password" placeholder="Password" required />
+                <i class="bx bxs-lock-alt"></i>
+              </div>
+              <div class="signup-credentials">
+                <input
+                  type="Confirm password"
+                  placeholder="Confirm Password"
+                  required
+                />
+                <i class="bx bxs-lock-alt"></i>
+              </div>
+              <button type="submit" class="signup-btn">Sign Up</button>
+            </form>
+          </div>
+        </div>
         <div id="page1-content">
           <nav>
-            <h3><a href="#">The Parking Allotment Venture.</a></h3>
+            <h3><a href="#">The Parking Allotment Venture</a></h3>
             <div id="nav-part2">
               <!-- <h4><a href="#">Log Out</a></h4>
               <h4>
@@ -40,8 +97,8 @@
                   ><img class="user-img" src="Images/1.jpg" alt="User Photo"
                 /></a>
               </h4> -->
-              <h4><a href="#">Sign Up</a></h4>
-              <h4><a href="#">Log In</a></h4>
+              <h4 id="signUp"><a href="#">Sign Up</a></h4>
+              <h4 id="logIn"><a href="#">Log In</a></h4>
               <h4 id="menu"><a href="#">Menu</a></h4>
             </div>
           </nav>
@@ -69,16 +126,14 @@
             <div class="content">
               <h2 class="title">Find Parking</h2>
               <p class="copy">Find a space for your car</p>
-              <button class="btn">Find Parking</button>
+              <button class="parking-btn">Find Parking</button>
             </div>
           </div>
           <div class="card">
             <div class="content">
               <h2 class="title">List Parking</h2>
-              <p class="copy">
-                List your parking space today, &amp; Start earning effortlessly!
-              </p>
-              <button class="btn">Enlist Now</button>
+              <p class="copy">List your parking space today</p>
+              <button class="parking-btn">Enlist Now</button>
             </div>
           </div>
         </main>
@@ -162,7 +217,8 @@
       AOS.init();
     </script>
     <script src="script.js"></script>
-    <script src="3dEffect.js"></script>
     <script src="menu.js"></script>
+    <script src="login.js"></script>
+    <script src="signup.js"></script>
   </body>
 </html>
